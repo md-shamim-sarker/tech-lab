@@ -14,7 +14,8 @@ body {
     overflow-x: hidden;
 }
 
-h1 {
+h1,
+.special-heading {
     font-size: 2.2em;
 }
 
@@ -72,7 +73,8 @@ h3 {
 
 .service-section h1,
 .product-section h1,
-.update-section h1 {
+.update-section h1,
+.special-heading {
     text-align: center;
     margin: 1em 0;
 }
@@ -106,6 +108,11 @@ h3 {
 /*=============================================================
 -----------------------Product Section--------------------------
 ===============================================================*/
+
+.product-section {
+    margin-top: 2em;
+}
+
 .product-section h2 {
     margin: 0 0 1em 2em;
 }
@@ -197,7 +204,7 @@ footer p {
     }
 
     .header-image img {
-        width: 100vw;
+        width: 90vw;
     }
 
     /* ------------------------------------------------------------------- */
@@ -208,12 +215,25 @@ footer p {
         align-items: center;
     }
 
+    .service-card {
+        width: 90vw;
+    }
+
     /* ------------------------------------------------------------------- */
 
     .product-cards {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .product-card {
+        width: 90vw;
+        margin-top: 2em;
+    }
+
+    .product-image img {
+        width: 80vw
     }
 
     .product-section h2 {
