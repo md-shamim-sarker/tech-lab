@@ -34,6 +34,7 @@ h3 {
     color: white;
     border-radius: 5px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 
@@ -69,7 +70,8 @@ h3 {
 -----------------------Service Section--------------------------
 ===============================================================*/
 
-.service-section h1 {
+.service-section h1,
+.product-section h1 {
     text-align: center;
     margin: 1em 0;
 }
@@ -103,8 +105,36 @@ h3 {
 /*=============================================================
 -----------------------Product Section--------------------------
 ===============================================================*/
+.product-section h2 {
+    margin: 0 0 1em 2em;
+}
 
+.product-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.product-card {
+    width: 380px;
+    padding: 10px;
+    box-shadow: 3px 3px 20px #e0dede;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-text {
+    text-align: center;
+}
+
+.product-text p {
+    color: gray;
+}
+
+#best-phone {
+    margin-top: 1em;
+}
 
 
 
@@ -131,5 +161,16 @@ h3 {
         row-gap: 2em;
         flex-direction: column;
         align-items: center;
+    }
+
+    .product-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-section h2 {
+        margin: 0;
+        text-align: center;
     }
 }
